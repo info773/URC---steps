@@ -12,18 +12,18 @@ export default function App() {
 
   function handlePrevious() {
     if (step >= 2) {
-      setStep(step - 1);
+      setStep((s) => s - 1);
     }
   }
 
   function handleNext() {
     if (step <= 2) {
-      setStep(step + 1);
+      setStep((s) => s + 1);
     }
   }
 
   function handeClose() {
-    setIsOpen(!isOpen);
+    setIsOpen((isOpen) => !isOpen);
   }
 
   return (
